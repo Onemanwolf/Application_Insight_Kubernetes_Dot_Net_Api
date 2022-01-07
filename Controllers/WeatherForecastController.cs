@@ -33,7 +33,7 @@ namespace AppInsightsKubernetes.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
            /// HttpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
-
+            _logger.LogInformation("Get Weather Called");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

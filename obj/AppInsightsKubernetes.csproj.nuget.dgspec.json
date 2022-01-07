@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Application_Insights\\Application_Insights_Kubernetes\\AppInsightsKubernetes\\AppInsightsKubernetes.csproj": {}
+    "C:\\Application_Insights_Kubernetes\\Application_Insight_Kubernetes_Dot_Net_Api\\AppInsightsKubernetes.csproj": {}
   },
   "projects": {
-    "C:\\Application_Insights\\Application_Insights_Kubernetes\\AppInsightsKubernetes\\AppInsightsKubernetes.csproj": {
+    "C:\\Application_Insights_Kubernetes\\Application_Insight_Kubernetes_Dot_Net_Api\\AppInsightsKubernetes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Application_Insights\\Application_Insights_Kubernetes\\AppInsightsKubernetes\\AppInsightsKubernetes.csproj",
+        "projectUniqueName": "C:\\Application_Insights_Kubernetes\\Application_Insight_Kubernetes_Dot_Net_Api\\AppInsightsKubernetes.csproj",
         "projectName": "AppInsightsKubernetes",
-        "projectPath": "C:\\Application_Insights\\Application_Insights_Kubernetes\\AppInsightsKubernetes\\AppInsightsKubernetes.csproj",
-        "packagesPath": "C:\\Users\\timot\\.nuget\\packages\\",
-        "outputPath": "C:\\Application_Insights\\Application_Insights_Kubernetes\\AppInsightsKubernetes\\obj\\",
+        "projectPath": "C:\\Application_Insights_Kubernetes\\Application_Insight_Kubernetes_Dot_Net_Api\\AppInsightsKubernetes.csproj",
+        "packagesPath": "C:\\Users\\tioleson\\.nuget\\packages\\",
+        "outputPath": "C:\\Application_Insights_Kubernetes\\Application_Insight_Kubernetes_Dot_Net_Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\timot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tioleson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\tioleson\\source\\repos\\FoundationUtilities.API": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.hangfire.io/nuget/hangfire-pro": {}
         },
         "frameworks": {
           "net5.0": {
@@ -46,6 +47,10 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "Microsoft.ApplicationInsights.EventCounterCollector": {
               "target": "Package",
               "version": "[2.18.0, )"
             },
@@ -88,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
